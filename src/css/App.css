@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: auto;
+  width: 100%;
+  max-width: 2000px;
+  height: 60px;
+  display: flex;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.637);
+  background: #0575E6;
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  background: linear-gradient(to right, #021B79, #0575E6);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+header .logo {
+  width: 20%;
+  z-index: 3;
+}
+header .logo img {
+  margin-left: 15px;
+  width: 200px;
+  height: 60px;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  z-index: 5;
+  margin-right: 43px;
+}
+header nav li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  margin: 15px 5px;
+}
+header nav li a {
+  color: #f3f3f3;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-radius: 10px;
+}
+header nav .img-iconos {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+header nav a:hover {
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+  border-radius: 10px;
+  transition: 1s;
+  color: #d5d5d8;
+  box-shadow: 1px 0px 0px 2px #018bb9;
+  transform: scale(1.1);
+}
+header nav .active {
+  text-decoration: underline 2px #FBFF00;
+  background-color: #000428;
+  border-radius: 5px;
+}
+header .cart {
+  margin-top: 20px;
+  margin-right: 5px;
+  right: 0;
+  z-index: 3;
+  list-style: none;
+  position: absolute;
+}
+header .cart a {
+  color: #f3f3f3;
+}
+header .cart a .countcart {
+  color: rgb(241, 30, 30);
+  font-weight: bold;
+}
+header .cart a img {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+header .cart a img:hover {
+  background: none;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  transition: 1s;
+  transform: scale(1.1);
+}
+header #checkbtn {
+  display: none;
+}
+header label {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -200%;
+    height: 60px;
+    flex-wrap: wrap;
+    background: #0575E6;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6);
+  }
+  header nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 15px auto;
+  }
+  header nav li a {
+    color: #d5d5d8;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .img-iconos {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  header nav a {
+    text-align: left;
+    font-size: 5px;
+  }
+  header .cart {
+    margin-top: 10px;
+    margin-right: 60px;
+    right: 0;
+    z-index: 3;
+    list-style: none;
+    position: absolute;
+  }
+  header .cart a {
+    color: #f3f3f3;
+  }
+  header .cart a img {
+    width: 32px;
+    height: 32px;
+  }
+  header .cart a img:hover {
+    background: none;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  header #checkbtn {
+    display: none;
+  }
+  header .menu-hamb {
+    margin: 12px 25px 0px auto;
+    display: block;
+    z-index: 5;
+    height: 15px;
+  }
+  header .cruz-boton {
+    margin: 12px 25px 0px auto;
+    display: none;
+    height: 15px;
+    z-index: 5;
+  }
+  header #checkbtn:checked ~ nav {
+    margin-top: 60px;
+    transition: all 500ms ease-in;
+  }
+  header #checkbtn:checked ~ .cruz-boton {
+    display: block;
+    transition: all 500ms ease-in-out;
+  }
+  header #checkbtn:checked ~ .menu-hamb {
+    left: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: -200%;
+    height: 485px;
+    flex-wrap: wrap;
+    background: #0575E6;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6);
+  }
+  header nav ul {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 2px solid #d5d5d8;
+  }
+  header nav ul li a {
+    font-size: 20px;
+    letter-spacing: 10px;
+    width: 100%;
+    text-align: left;
+  }
+  header nav a:hover {
+    border-radius: none;
+    transition: none;
+    color: #d5d5d8;
+    border-bottom: none;
+    cursor: pointer;
+    background: none;
+    background: -webkit-linear-gradient(none);
+    background: linear-gradient(none);
+    border-radius: none;
+    transition: none;
+    box-shadow: none;
+    transform: none;
+  }
+  header nav .img-iconos {
+    margin-right: 10px;
+    margin-top: 6px;
+    width: 16px;
+    height: 16px;
+  }
+  header #checkbtn {
+    display: none;
+  }
+  header .menu-hamb {
+    margin: 12px 25px 0px auto;
+    display: block;
+    height: 15px;
+  }
+  header .cruz-boton {
+    margin: 12px 25px 0px auto;
+    display: none;
+    height: 15px;
+  }
+  header #checkbtn:checked ~ nav {
+    margin-top: 60px;
+    transition: all 300ms ease-in;
+  }
+  header #checkbtn:checked ~ .cruz-boton {
+    display: block;
+    transition: all 300ms ease-in-out;
+  }
+  header #checkbtn:checked ~ .menu-hamb {
+    left: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .logo img {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 120px;
+    height: 40px;
+  }
+  header .cart {
+    margin-top: 18px;
+    margin-right: 60px;
+    right: 0;
+  }
+  header .cart a img {
+    width: 26px;
+    height: 26px;
+  }
+  header .menu-hamb i {
+    margin-top: 8px;
+    font-size: 25px;
+  }
+  header .cruz-boton i {
+    margin-top: 8px;
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
