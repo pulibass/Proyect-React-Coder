@@ -340,5 +340,36 @@ header label {
     font-size: 25px;
   }
 }
+.containerItemCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.containerItemCount .countItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: red;
+}
+.containerItemCount .countItem button {
+  width: 50px;
+  margin: 10px;
+}
+.containerItemCount .countItem .count {
+  font-weight: bold;
+  margin: 10px;
+}
+.containerItemCount .addToCart {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.containerItemCount .addToCart button {
+  width: 100px;
+  margin: 20px auto;
+}
 
 /*# sourceMappingURL=App.css.map */
