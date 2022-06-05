@@ -1,60 +1,55 @@
-import React from 'react';
+import React, { useState } from "react";
 import "../../css/App.css";
 
+export default function Itemcount() {//COMPONENTE SIEMPRE EN MAYUSCULA
 
-export default class ItemCount extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            count: 0
-        };
+    // es una funcion que devuelve un array, con dos elementos, el primero la varibale
+    //y el segundo elemento una funcion para cambiar esa variable
+    const [counter, setCounter] = useState(0);
+
+    function incrementCount() {
+        setCounter(counter + 1);
+
+    }
+    function decrementCount() {
+        if (counter <= 0) return;
+        setCounter(counter - 1);
+
     }
 
-    incrementCount() {
-        this.setState({
-            count: this.state.count + 1
-        });
-    }
-    decrementCount() {
-
-        if (this.state.count <= 0) return;
-        this.setState({
-            count: this.state.count - 1
-
-
-        });
+    function onAdd() {
+        alert("producto agregado")
     }
 
-    addToCart() {
-        alert("agregado al carro")
+    function reset() {
+        setCounter(0)
     }
 
-    render() {
-        return (
-            <div className='containerItemCount'>
-                <h1>Item Count</h1>
 
-                <div className='countItem'>
+    return (
+        <div className='containerItemCount'>
+            <h1>Item Count</h1>
 
-                    <button onClick={() => this.decrementCount()}>
-                        -
-                    </button>
-                    <p className='count'>
-                        {this.state.count}
-                    </p>
-                    <button onClick={() => this.incrementCount()}>
-                        +
-                    </button>
-
-                </div>
-                <div className='addToCart'>
-                    <button onClick={() => this.addToCart()}>
-                        Agregar al carro
-                    </button>
-                </div>
-
+            <div className='countItem'>
+                <button onClick={() => decrementCount()} className="button">-</button>
+                <p className='count'>
+                    {counter}
+                </p>
+                <button onClick={() => incrementCount()} className="button">+</button>
+            </div>
+            <div className='buttonsAddDelet'>
+                <button onClick={() => onAdd()}>
+                    Agregar al carro
+                </button>
+                <button onClick={() => reset()}>
+                    Reset
+                </button>
             </div>
 
-        );
-    }
+        </div>
+    )
 }
+
+
+
+

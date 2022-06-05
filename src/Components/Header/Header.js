@@ -5,7 +5,7 @@ import homeIcon from '../../img/iconos/home.png';
 import productIcon from '../../img/iconos/producto.png';
 import contactoIcon from '../../img/iconos/email.png';
 import usuarioIcon from '../../img/iconos/usuario2.png';
-import cartIcon from '../../img/iconos/cart.png';
+import CartList from '../Cart/CartList';
 export default function Header() {
 
     return (
@@ -46,11 +46,8 @@ export default function Header() {
                         </li>
                     </ul>
                 </nav>
-                <div className="cart">
-                    <a href="/cart"><span className='countcart' id='countcart'>0</span><img className="img-iconos" src={cartIcon}
-                        alt="icono-cart" /></a>
-                </div>
 
+                <CartList></CartList>
             </header>
         </div>
 
