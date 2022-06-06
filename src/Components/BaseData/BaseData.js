@@ -1,10 +1,11 @@
-/* import cubiertas from "../../../img/cubiertas/rueda-pirelli.jpg" */
+import cubiertas from "../../img/cubiertas/rueda-pirelli.jpg"
+
 
 const productos = [
 
     {
         "id": "cubierta1",
-        "img": "rueda-pirelli.jpg",
+        "img": cubiertas,
         "title": "CINTURATO P1",
         "subTitle": "175/65R14 82T",
         "price": 25680,
@@ -12,7 +13,7 @@ const productos = [
         "cantidad": 1
     }, {
         "id": "cubierta2",
-        "img": "../../img/cubiertas/rueda-pirelli.jpg",
+        "img": cubiertas,
         "title": "FORMULA ENERGY",
         "subTitle": "175/65R14 82T",
         "price": 13890,
@@ -20,7 +21,7 @@ const productos = [
         "cantidad": 1
     }, {
         "id": "cubierta3",
-        "img": "../../img/cubiertas/rueda-pirelli.jpg",
+        "img": cubiertas,
         "title": "P400 EVO",
         "subTitle": "175/65R14 82T",
         "price": 18560,
@@ -28,7 +29,7 @@ const productos = [
         "cantidad": 1
     }, {
         "id": "cubierta4",
-        "img": "../../img/cubiertas/rueda-pirelli.jpg",
+        "img": cubiertas,
         "title": "CHRONO",
         "subTitle": "175/65R14 90T",
         "price": 19530,
@@ -36,7 +37,7 @@ const productos = [
         "cantidad": 1
     }, {
         "id": "cubierta5",
-        "img": "../../img/cubiertas/rueda-pirelli.jpg",
+        "img": cubiertas,
         "title": "CINTURATO P1",
         "subTitle": "175/70R14 84T",
         "price": 24570,
@@ -44,7 +45,7 @@ const productos = [
         "cantidad": 1
     }, {
         "id": "cubierta6",
-        "img": "../../img/cubiertas/rueda-pirelli.jpg",
+        "img": cubiertas,
         "title": "XL SCORPION ATR",
         "subTitle": "175/70R14 88H",
         "price": 32920,

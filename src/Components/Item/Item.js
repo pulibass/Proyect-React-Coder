@@ -12,19 +12,25 @@ export default function Item(props) {
 
 
     return (
-        <div style={{ width: '16rem' }}>
-            <div>
-                <img src={props.pro.img} alt="nombre" />
-                <h2>{props.pro.id}</h2>
-                <h4>{props.pro.title}</h4>
-                <h4>{props.pro.subTitle}</h4>
-                <p>
-                    Precio: ${props.pro.price}
-                </p>
-                <ItemCount inicio={0} />
-            </div>
 
+
+        <div className="container-cards">
+            <div className="card">
+                <div className='tarjeta-contenido'>
+                    <div className="imagen"><img id="img-producto" src={props.pro.img} alt="" /></div>
+                    <h2 className="title-producto">{props.pro.title}<span>{props.pro.subTitle}</span></h2>
+                    <div className="seccion2">
+                        <p className="precio-producto">{props.pro.price}</p>
+                    </div>
+                    <div className='itemCountBtn'>
+                        <ItemCount inicio={0} />
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
     )
 }
 

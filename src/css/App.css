@@ -349,13 +349,19 @@ header label {
 }
 .containerItemCount .countItem {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
-  background-color: red;
+  width: 100%;
 }
 .containerItemCount .countItem button {
   width: 50px;
   margin: 10px;
+  border-radius: 5px;
+  border: hidden;
+  background-color: rgb(77, 77, 247);
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
 }
 .containerItemCount .countItem .count {
   font-weight: bold;
@@ -368,8 +374,107 @@ header label {
   justify-content: center;
 }
 .containerItemCount .buttonsAddDelet button {
-  width: 100px;
+  width: 150px;
   margin: 20px 5px;
+  background-color: rgba(0, 0, 0, 0.8823529412);
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.containerItemCount .buttonsAddDelet button:hover {
+  background-color: rgba(65, 64, 64, 0.8823529412);
+  color: #fff;
+}
+
+.containerCards {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+.containerCards .container-cards {
+  width: 80%;
+  border: hidden;
+  display: flex;
+  justify-content: center;
+}
+.containerCards .container-cards .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1700px;
+  height: 100%;
+  padding: 1rem;
+  background: none;
+  border: none;
+}
+.containerCards .container-cards .card .tarjeta-contenido {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 0 10px #000;
+  border-radius: 5px;
+}
+.containerCards .container-cards .card .tarjeta-contenido .imagen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 15px;
+}
+.containerCards .container-cards .card .tarjeta-contenido .imagen img {
+  width: 60%;
+  height: 200px;
+}
+.containerCards .container-cards .card .tarjeta-contenido h2 {
+  background-color: #dad5d5;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  color: #0a0a0a;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.containerCards .container-cards .card .tarjeta-contenido .seccion2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerCards .container-cards .card .tarjeta-contenido .seccion2 p {
+  background-color: #080908;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fafafa;
+}
+.containerCards .container-cards .card .tarjeta-contenido .itemCountBtn {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+}
+.containerCards .container-cards .tarjeta-contenido:hover {
+  transform: scale(1);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=App.css.map */

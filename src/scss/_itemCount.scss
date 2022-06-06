@@ -7,14 +7,20 @@
 
     .countItem {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
-        background-color: red;
+        width: 100%;
 
 
         button {
             width: 50px;
-            margin: 10px
+            margin: 10px;
+            border-radius: 5px;
+            border: hidden;
+            background-color: rgb(77, 77, 247);
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
         }
 
         .count {
@@ -30,8 +36,20 @@
         justify-content: center;
 
         button {
-            width: 100px;
+            width: 150px;
             margin: 20px 5px;
+            background-color: #000000e1;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #414040e1;
+            color: #fff;
         }
     }
 }
