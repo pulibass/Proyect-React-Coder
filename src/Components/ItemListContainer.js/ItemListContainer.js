@@ -10,7 +10,9 @@ const ItemListContainer = ({ mensaje }) => {
 
     useEffect(() => {
         getProducto().then(response => {
-            setProductos(response)
+            setProductos(response);
+
+            console.log(response);
         })
     }, [])
 

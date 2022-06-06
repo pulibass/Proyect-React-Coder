@@ -28,8 +28,6 @@ export default function Itemcount() {//COMPONENTE SIEMPRE EN MAYUSCULA
 
     return (
         <div className='containerItemCount'>
-            <h1>Item Count</h1>
-
             <div className='countItem'>
                 <button onClick={() => decrementCount()} className="button">-</button>
                 <p className='count'>
